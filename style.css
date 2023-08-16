@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'AktivBlack';
+    src: url('fonts/AktivGrotesk-Black.ttf');
+}
+@font-face {
+    font-family: 'AktivBold';
+    src: url('fonts/AktivGrotesk-Bold.ttf');
+}
+@font-face {
+    font-family: 'AktivLight';
+    src: url('fonts/AktivGrotesk-Light.ttf');
+}
+@font-face {
+    font-family: 'AktivRegular';
+    src: url('fonts/AktivGrotesk-Regular.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+.hero-section {
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(0,139,99, 0.8),
+        rgba(0,139,99, 0.8)
+    ), url(images/back-image.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+header {
+    background-color: transparent; 
+    padding: 1vw 12vw;
+}
+
+.header-logo{
+    height: 60px;
+}
+
+.hero-content {
+    margin: 10vh 12vw 0vw;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    max-height: 70vh; 
+}
+
+.hero-left {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.hero-right {
+    flex-basis: 40%;
+}
+.left-align-text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.offertas {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.hero-logo {
+    height: 75px;
+    margin-right: -13px;
+}
+
+.white-bold-text{
+    font-family: AktivBold;
+    color: white;
+    font-size: 5.5vh;
+}
+.white-light-text{
+    font-family: AktivLight;
+    font-weight: 200;
+    color: white;
+    font-size: 3vh;
+}
+
+.secondary-text-left{
+    margin-top: 4vh;
+}
+
+.download-buttons {
+    margin-top: 4vh;
+    display: flex;
+    gap: 20px;
+}
+
+.appstore-button, .googleplay-button {
+    background-color: white;
+    text-decoration: none;
+    color: rgba(0, 139, 99);
+    border: none;
+    border-radius: 100px;
+    padding: 15px 25px;
+    font-family: AktivBold;
+    font-size: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.appstore-button i, .googleplay-button i {
+    font-size: 1em; 
+    margin-right: 10px;
+}
+
+
+.appstore-button:hover, .googleplay-button:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.hero-right {
+    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-right {
+    flex-basis: 45%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    
+}
+
+.iphone-1 {
+    margin-left: auto;
+    max-height: 70vh;
+}
+
