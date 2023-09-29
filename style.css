@@ -18,48 +18,44 @@
     margin: 0;
     padding: 0;
     border: 0;
-}
-
+  }
+  
 .hero-section {
     height: 100vh;
     background-image: linear-gradient(
-        rgba(0, 139, 99, 0.8),
-        rgba(0, 139, 99, 0.8)
+        rgba(0,139,99, 0.8),
+        rgba(0,139,99, 0.8)
     ), url(images/back-image.jpg);
     background-size: cover;
     background-position: center;
+    
 }
-
 header {
-    background-color: transparent;
+    background-color: transparent; 
     padding: 1vw 12vw;
 }
 
-.header-logo {
+.header-logo{
     height: 60px;
 }
 
 .hero-content {
     margin: 10vh 12vw 0vw;
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: space-between;
-    max-height: 70vh;
+    max-height: 70vh; 
 }
 
 .hero-left {
     flex-basis: 60%;
     display: flex;
     flex-direction: column;
+    
 }
-
 .hero-right {
     flex-basis: 40%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
 }
-
 .left-align-text {
     display: flex;
     align-items: center;
@@ -77,20 +73,19 @@ header {
     margin-right: -13px;
 }
 
-.white-bold-text {
+.white-bold-text{
     font-family: AktivBold;
     color: white;
     font-size: 5.5vh;
 }
-
-.white-light-text {
+.white-light-text{
     font-family: AktivLight;
     font-weight: 200;
     color: white;
     font-size: 3vh;
 }
 
-.secondary-text-left {
+.secondary-text-left{
     margin-top: 4vh;
 }
 
@@ -100,8 +95,7 @@ header {
     gap: 20px;
 }
 
-.appstore-button,
-.googleplay-button {
+.appstore-button, .googleplay-button {
     background-color: white;
     text-decoration: none;
     color: rgba(0, 139, 99);
@@ -115,17 +109,37 @@ header {
     align-items: center;
 }
 
-.appstore-button i,
-.googleplay-button i {
-    font-size: 1em;
+.appstore-button i, .googleplay-button i {
+    font-size: 1em; 
     margin-right: 10px;
 }
 
-.appstore-button:hover,
-.googleplay-button:hover {
+
+.appstore-button:hover, .googleplay-button:hover {
     background-color: transparent;
     color: white;
     border: 1px solid white;
+}
+
+.hero-right {
+    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-right {
+    flex-basis: 45%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    
+}
+
+.iphone-1 {
+    margin-left: auto;
+    max-height: 70vh;
 }
 
 @media (max-width: 768px) {
@@ -137,12 +151,7 @@ header {
         flex-direction: column;
         text-align: center;
     }
-    .hero-content.stretch {
-        margin: 5px 3vw;
-        flex-direction: column;
-        text-align: center;
-        flex-grow: 1; /* Permite que .hero-content se estire verticalmente */
-    }
+
     .secondary-text-left {
         text-align: left;
         margin-top: 30px;
@@ -163,23 +172,29 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 30px;
-        gap: 10px;
+        margin: 30px; 
+        gap: 10px; 
     }
     .appstore-button,
     .googleplay-button {
         font-size: 1.7vh;
+        
+    }
+    .hero-content.stretch {
+        margin: 5px 3vw;
+        flex-direction: column;
+        text-align: center;
+        flex-grow: 1; /* Permite que .hero-content se estire verticalmente */
     }
 
     .hero-right {
         margin-top: 20px;
         flex-basis: 45%;
-        overflow:auto;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
-        
+        height: auto; /* Cambiamos la altura a automático para evitar cortes en la imagen */
     }
 
     /* Estilo para la imagen en dispositivos móviles */
@@ -189,3 +204,4 @@ header {
         height: auto; /* Añadimos esto para asegurarnos de que la imagen no se corte y mantenga su relación de aspecto */
     }
 }
+
